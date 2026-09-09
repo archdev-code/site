@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DarotheSwitch - Developer</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: system-ui, sans-serif;
             background: #0a0e14;
             color: #e0e0e0;
             line-height: 1.6;
@@ -29,107 +25,94 @@
             background: #141a24;
             border-radius: 16px;
             padding: 40px 35px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 20px 60px rgba(0,0,0,.6);
             border: 1px solid #2a3340;
         }
 
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .name {
-            font-size: 48px;
-            font-weight: 700;
-            color: #6fc3ff;
-            letter-spacing: 2px;
+        .header { text-align: center; margin-bottom: 30px; }
+        
+        .name { 
+            font-size: 48px; 
+            font-weight: 700; 
+            color: #6fc3ff; 
+            letter-spacing: 2px; 
             margin-bottom: 6px;
         }
-
-        .subtitle {
-            font-size: 18px;
-            color: #8899aa;
-            letter-spacing: 3px;
-            font-weight: 300;
+        
+        .subtitle { 
+            font-size: 18px; 
+            color: #8899aa; 
+            letter-spacing: 3px; 
+            font-weight: 300; 
         }
 
-        .divider {
-            height: 1px;
-            background: #2a3340;
-            margin: 25px 0;
+        .divider { 
+            height: 1px; 
+            background: #2a3340; 
+            margin: 25px 0; 
         }
 
-        .section {
-            margin-bottom: 28px;
+        .section { margin-bottom: 28px; }
+        
+        .section-title { 
+            font-size: 20px; 
+            font-weight: 600; 
+            color: #6fc3ff; 
+            margin-bottom: 12px; 
+        }
+        
+        .section p { 
+            color: #b0c0d0; 
+            font-size: 16px; 
+        }
+        
+        .section p strong { 
+            color: #8ad0ff; 
         }
 
-        .section-title {
-            font-size: 20px;
-            font-weight: 600;
-            color: #6fc3ff;
-            margin-bottom: 12px;
+        .tags { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 10px; 
+            margin-top: 10px; 
+        }
+        
+        .tag { 
+            background: #1e2633; 
+            padding: 6px 18px; 
+            border-radius: 20px; 
+            font-size: 14px; 
+            color: #b0c8e0; 
+            border: 1px solid #2a3340; 
+        }
+        
+        .tag:hover { 
+            background: #2a3340; 
+            color: #fff; 
         }
 
-        .section p {
-            color: #b0c0d0;
-            font-size: 16px;
-        }
-
-        .section p strong {
-            color: #8ad0ff;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .tag {
-            background: #1e2633;
-            padding: 6px 18px;
-            border-radius: 20px;
-            font-size: 14px;
-            color: #b0c8e0;
-            border: 1px solid #2a3340;
-        }
-
-        .tag:hover {
-            background: #2a3340;
-            color: #fff;
-        }
-
-        .footer {
-            text-align: center;
-            color: #556677;
-            font-size: 14px;
+        .footer { 
+            text-align: center; 
+            color: #556677; 
+            font-size: 14px; 
             margin-top: 20px;
             padding-top: 20px;
             border-top: 1px solid #1e2633;
         }
-
-        .footer span {
-            color: #6fc3ff;
+        
+        .footer span { 
+            color: #6fc3ff; 
         }
 
         @media (max-width: 500px) {
-            .container {
-                padding: 25px 18px;
-            }
-            .name {
-                font-size: 32px;
-            }
-            .subtitle {
-                font-size: 14px;
-            }
+            .container { padding: 25px 18px; }
+            .name { font-size: 32px; }
+            .subtitle { font-size: 14px; }
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-
         <div class="header">
             <h1 class="name">DarotheSwitch</h1>
             <p class="subtitle">Developer &amp; Builder</p>
@@ -137,26 +120,16 @@
 
         <div class="divider"></div>
 
-        <!-- About -->
         <div class="section">
             <h2 class="section-title">👋 About</h2>
-            <p>
-                I'm <strong>DarotheSwitch</strong>, a developer who enjoys building stuff, 
-                learning new things, and solving problems. I work with different languages 
-                and tools depending on what the project needs.
-            </p>
+            <p>I'm <strong>DarotheSwitch</strong>, a developer who enjoys building stuff, learning new things, and solving problems. I work with different languages and tools depending on what the project needs.</p>
         </div>
 
-        <!-- What I Do -->
         <div class="section">
             <h2 class="section-title">⚡ What I Do</h2>
-            <p>
-                I write code, build projects, and experiment with ideas. 
-                I'm interested in web development, automation, AI, and security.
-            </p>
+            <p>I write code, build projects, and experiment with ideas. I'm interested in web development, automation, AI, and security.</p>
         </div>
 
-        <!-- Languages -->
         <div class="section">
             <h2 class="section-title">🛠️ Languages &amp; Tools</h2>
             <div class="tags">
@@ -175,28 +148,19 @@
             </div>
         </div>
 
-        <!-- Philosophy -->
         <div class="section">
             <h2 class="section-title">🧠 Philosophy</h2>
-            <p>
-                Build things. Learn from mistakes. Make it better next time.
-                I don't pretend to know everything — half the fun is figuring it out.
-            </p>
+            <p>Build things. Learn from mistakes. Make it better next time. I don't pretend to know everything — half the fun is figuring it out.</p>
         </div>
 
-        <!-- Final -->
-        <div class="section" style="background: #1a222f; padding: 16px 20px; border-radius: 10px; border-left: 4px solid #6fc3ff;">
-            <p style="color: #d0e0f0; font-size: 18px; font-weight: 400;">
-                I'm just a developer who likes to build stuff. 🚀
-            </p>
+        <div style="background: #1a222f; padding: 16px 20px; border-radius: 10px; border-left: 4px solid #6fc3ff; margin: 20px 0;">
+            <p style="color: #d0e0f0;">I'm just a developer who likes to build stuff. 🚀</p>
         </div>
 
         <div class="footer">
             <p>Made by <span>DarotheSwitch</span></p>
             <p style="font-size: 12px; color: #445566; margin-top: 4px;">Code. Learn. Build. Repeat.</p>
         </div>
-
     </div>
-
 </body>
 </html>
